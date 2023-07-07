@@ -10,9 +10,7 @@ public class HelloWorld {
         String userInput = scanner.nextLine();
         System.out.println("You entered: " + userInput);
 
-        if (StringUtils.isNumeric(userInput) == false) {
-            System.out.println(userInput + " is not a number");
-        }
+        if (!StringUtils.isNumeric(userInput)) System.out.println(userInput + " is not a number");
 
         System.out.println("Flipped Case: " + StringUtils.swapCase(userInput));
 
